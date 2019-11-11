@@ -23,6 +23,7 @@ Pod::Spec.new do |s|
     'OTHER_LDFLAGS' => '-framework Crashlytics -framework Fabric'
   }
 
+  s.static_framework    = true
   s.preserve_paths      = 'README.md', 'LICENSE', 'package.json'
   s.source_files        = 'ios/**/*.{h,m}'
   s.exclude_files       = 'android/**/*'
